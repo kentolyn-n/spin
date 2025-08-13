@@ -1,0 +1,51 @@
+body 
+{ font-family: Arial, sans-serif; 
+  text-align: center; 
+  background: #f0f0f0; 
+}
+
+  #wheel {
+     border: 5px solid #333; 
+     border-radius: 50%; 
+     background: black;
+     }
+  button {
+     padding: 10px 20px; 
+     margin: 10px;
+     font-size: 16px; 
+     cursor: pointer;
+     border-radius: 10px;
+     }
+  input { 
+    padding: 8px;
+     font-size: 16px;
+     }
+  #truthDareBtns { display: none; }
+  #playerList { margin-top: 10px; }
+     
+    #btn1 {
+        background-color: red;
+        transition: transform 0.3s ease;
+    }
+    #btn1:hover {
+        transform: scale(1.2);
+    }
+
+    #btn2 {
+        background-color: blue;
+        transition: transform 0.3s ease;
+    }
+    #btn2:hover {
+        transform: scale(1.2);
+    }
+
+     #spin{
+        background-color: violet;
+        transition: transform 0.3s ease;
+    }
+    #spin:hover {
+        transform: scale(1.2);
+    }
+    input {
+        border-radius: 10px;
+    }

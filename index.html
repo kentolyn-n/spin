@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Truth or Dare Game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Truth or Dare</h1>
+
+<!-- Add players -->
+<input type="text" id="playerName" placeholder="Enter player name">
+<button onclick="addPlayer()">Add Player</button>
+
+<div id="playerList"></div>
+
+<!-- Wheel -->
+<canvas id="wheel" width="300" height="300"></canvas>
+<br>
+<button id="spin" onclick="spinWheel()">Spin</button>
+
+<!-- Truth/Dare Buttons -->
+<div id="truthDareBtns">
+  <button id="btn1" onclick="chooseTruth()">Truth</button>
+  <button id="btn2" onclick="chooseDare()">Dare</button>
+</div>
+
+<!-- Result -->
+<p id="result"></p>
+<script src="js/spin.js"></script>
+</body>
+</html>
