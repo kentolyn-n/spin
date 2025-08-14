@@ -1,51 +1,79 @@
-body 
-{ font-family: Arial, sans-serif; 
-  text-align: center; 
-  background: #f0f0f0; 
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
 }
 
-  #wheel {
-     border: 5px solid #333; 
-     border-radius: 50%; 
-     background: black;
-     }
+#wheel {
+  border: 5px solid #333;
+  border-radius: 50%;
+  background: black;
+  max-width: 90vw;   /* responsive size */
+  height: auto;      /* keep aspect ratio */
+  display: block;
+  margin: 20px auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: clamp(150px, 50%, 300px);
+}
+
+#truthDareBtns {
+  display: none;
+}
+
+#playerList {
+  margin-top: 10px;
+}
+
+/* Button colors and hover effects */
+#btn1 {
+  background-color: red;
+  transition: transform 0.3s ease;
+}
+#btn1:hover {
+  transform: scale(1.2);
+}
+
+#btn2 {
+  background-color: blue;
+  transition: transform 0.3s ease;
+}
+#btn2:hover {
+  transform: scale(1.2);
+}
+
+#spin {
+  background-color: violet;
+  transition: transform 0.3s ease;
+}
+#spin:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
   button {
-     padding: 10px 20px; 
-     margin: 10px;
-     font-size: 16px; 
-     cursor: pointer;
-     border-radius: 10px;
-     }
-  input { 
-    padding: 8px;
-     font-size: 16px;
-     }
-  #truthDareBtns { display: none; }
-  #playerList { margin-top: 10px; }
-     
-    #btn1 {
-        background-color: red;
-        transition: transform 0.3s ease;
-    }
-    #btn1:hover {
-        transform: scale(1.2);
-    }
+    width: 100%;
+    font-size: 1rem;
+  }
 
-    #btn2 {
-        background-color: blue;
-        transition: transform 0.3s ease;
-    }
-    #btn2:hover {
-        transform: scale(1.2);
-    }
-
-     #spin{
-        background-color: violet;
-        transition: transform 0.3s ease;
-    }
-    #spin:hover {
-        transform: scale(1.2);
-    }
-    input {
-        border-radius: 10px;
-    }
+  input {
+    width: 100%;
+  }
+}
